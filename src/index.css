@@ -1,24 +1,27 @@
 body {
-    background-image: linear-gradient(45deg, red, blue);
-    z-index: -1;
+  background-image: linear-gradient(45deg, #ff3867, #ffc873, #d37ec6);
+  display: flex;
+  justify-content: center;
 }
 
-#container {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 450px;
-    height: 600px;
+.grid {
+  width: 450px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
-#header {
-    color: white;
-    height: 250px;
-    display: flex;
-
+.header {
+  grid-area: header;
+  background: blue;
 }
 
-#header-photo {
-    width: 450px;
-    object-fit: cover; 
+.content {
+  grid-area: content;
+  background: red;
+}
+
+.footer {
+  grid-area: footer;
+  background: green;
 }
