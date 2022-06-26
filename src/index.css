@@ -1,9 +1,15 @@
 /*General*/
 
+@font-face {
+  font-family: Poppins, Montserrat;
+  src: url('assets/fonts/');
+}
+
 :root {
   background-image: linear-gradient(45deg, #ff3867, #ffc873, #d37ec6);
   display: flex;
   justify-content: center;
+  font-family: Poppins, Montserrat;
 }
 
 .grid {
@@ -11,18 +17,21 @@
   height: 600px;
   display: flex;
   flex-direction: column;
+  border-radius: 30px 30px 30px 30px;
+  box-shadow: 5px 5px 10px #888888;
 }
 
 /* Header */
 
 .header {
-  background: blue;
   height: 150px;
 }
 
 #header-photo {
   border-bottom: 5px solid rgb(129, 32, 129);
+  border-radius: 30px 30px;
 }
+
 /* Content */
 
 .content {
@@ -41,9 +50,107 @@
   top: 60px;
 }
 
+#text-profile {
+  padding-top: 30px;
+  text-align: center;
+
+}
+
+.name {
+  margin: 0;
+  font-size: x-large;
+  text-align: center;
+}
+
+.location {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -16px;
+  color: #a05d5d
+}
+
+.svg-icon {
+  width: 15px;
+  fill: #a05d5d;
+}
+
+.location-text {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+}
+
+.text {
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: left;
+  font-size: medium;
+}
+
+.button {
+  position: relative;
+  bottom: -80px;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: large;
+  text-decoration: none;
+  color: #2d7cbf;
+  border: 2px solid #2d7cbf;
+  border-radius: 20px;
+}
+
 /* Footer */
 
 .footer {
-  background: green;
+  display: inline-flex;
+  flex-direction: row;
+  background: white;
   height: 50px;
+  text-align: center;
+  border-top: 1px solid #888888;
+  border-radius: 0 0 30px 30px;
+  color: #888888;
+}
+
+.svg-icon-footer {
+  width: 15px;
+  fill: #888888;
+}
+
+.footer p {
+  margin: 0;
+  margin-top: 5px;
+  font-size: small;
+}
+
+.footer-sub-1 {
+  width: 33.3%;
+  height: 50px;
+}
+
+.footer-sub-2 {
+  width: 33.3%;
+  height: 50px;
+  border-left: 1px solid #888888;
+  border-right: 1px solid #888888;
+}
+
+.footer-sub-3 {
+  width: 33.3%;
+  height: 50px;
+}
+
+
+.footer-number {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-number p {
+  margin: 3px;
+  margin-left: 2px;
 }
