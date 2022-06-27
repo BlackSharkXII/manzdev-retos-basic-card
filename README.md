@@ -1,4 +1,4 @@
-# manzdev-retos-titulo
+# manzdev-retos-basic-card
 
 🌍 **URL del reto**: *https://lenguajejs.com/retos/nivel-facil/basic-card/*
 
